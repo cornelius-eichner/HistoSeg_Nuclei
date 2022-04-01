@@ -1,6 +1,8 @@
 # Histology-NucleiSeg
 This repository lays out a deep learning approach for cellular nuclei instance segmentation of histology images stained with hematoxylin and eosin. For this, a U-Net deep learning architecture is coded in PyTorch and trained on provided histology images [Ronneberger O, 2015]. Two U-Nets, with different architecture (number of layers), are developed, trained, and evaluated. 
 
+The data stem from the Kaggle [CryoNuSeg](https://www.kaggle.com/datasets/ipateam/segmentation-of-nuclei-in-cryosectioned-he-images) Challenge. 
+
 The scripts perform the following steps:
 1. 01-Data_Inspection.ipynb loads the data and checks for potential size conflicts as well as sampling biases
 2. 02-Data_Preprocessing.ipynb normalizes, standardizes, and saves the dataset in NumPy format
